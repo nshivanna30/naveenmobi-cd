@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: naveen-finalapp
+  name: naveen-finalapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: naveen-finalapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: naveen-finalapp
+    spec:
+      containers:
+      - image: nshivanna30/naveencidemo:3
+        name: naveencidemo
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
