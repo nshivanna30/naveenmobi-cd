@@ -6,7 +6,7 @@ metadata:
     app: naveen-finalapp
   name: naveen-finalapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: naveen-finalapp
