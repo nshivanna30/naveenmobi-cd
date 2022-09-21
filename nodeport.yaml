@@ -12,7 +12,7 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: naveenlb777
+    name: naveen-finalapp
   type: NodePort
 status:
   loadBalancer: {}
